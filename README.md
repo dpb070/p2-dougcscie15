@@ -1,16 +1,16 @@
-# Project 2
+# Project 1
 
 ## Live URL
 <http://p2.dougcscie15.xyz>
 
 ## Description
-TBD
+CSCIE-15 Second Project - xkcd-style password generator
 
 ## Demo
-<https://www.youtube.com/tbd>
+<http://screencast.com/t/toBeDetermined>
 
 ## Details for teaching team
 None
 
 ## Outside code
-* TBD
+* Kickstart HTML library (see www.99lime.com)
