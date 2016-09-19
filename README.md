@@ -1,4 +1,4 @@
-# Project 1
+# Project 2
 
 ## Live URL
 <http://p2.dougcscie15.xyz>
