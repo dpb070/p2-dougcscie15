@@ -1,10 +1,4 @@
-<!-- Doug Bradley  -->
-<!-- CSCIE-15 -->
-<!-- Fall 2016 -->
-<!-- Assignment P2 - due 9/22-->
-<!-- XKCD-style password generator (see http://xkcd.com/936/) -->
-<!-- Main entry page-->
-<!--  -->
+
 <?php
 error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
 ini_set('display_errors', 1); # Display errors on page (instead of a log file)
@@ -13,10 +7,16 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Doug Bradley  -->
+    <!-- CSCIE-15 -->
+    <!-- Fall 2016 -->
+    <!-- Assignment P2 - due 9/22-->
+    <!-- XKCD-style password generator (see http://xkcd.com/936/) -->
+    <!-- Main entry page-->
     <meta charset='utf-8'>
     <title>P2</title>
     <link rel="stylesheet" href="lib/HTML-KickStart-master/css/kickstart.css" media="all">
-    <link rel="stylesheet" href="css/p2.css"
+    <link rel="stylesheet" href="css/p2.css">
     <?php require 'logic.php'; ?>
 </head>
 
@@ -26,7 +26,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
       <form method='POST', action="index.php">
           <div class="form_section">
               <label>
-                  Number of Words in Password <?php echo $displaySpec ?>: 
+                  Number of Words in Password <?php echo $displaySpec ?>:
               </label>
               <input type='text' name='wordcount'>
           </div>
