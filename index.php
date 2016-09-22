@@ -23,7 +23,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <body>
   <h3>Project 2:  xkcd-Style Password Generator</h3>
   <div class="col_7" id="form_info">
-      <form method='POST', action="index.php">
+      <form method='POST' action="index.php">
           <div class="form_section">
               <label>
                   Number of Words in Password <?php echo $displaySpec ?>:
