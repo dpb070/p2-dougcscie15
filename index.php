@@ -35,6 +35,11 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
               <input type="checkbox" name="symbol_flag" value="1">
           </div>
           <div class="form_section">
+                <label>Word separator</label>
+                <input type="radio" name="word_separator" value="space" checked>Space
+                <input type="radio" name="word_separator" value="hyphen">Hyphen
+          </div>
+          <div class="form_section">
               <input type='submit'>
           </div>
       </form>
