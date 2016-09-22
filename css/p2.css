@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+}
+.form_section {
+    padding: 1em;
+}
+#error_display  {
+color: red;
+font-weight: bold;
+}
+#password_display  {
+  font-weight: bold;
+}

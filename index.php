@@ -15,28 +15,40 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <head>
     <meta charset='utf-8'>
     <title>P2</title>
+    <link rel="stylesheet" href="lib/HTML-KickStart-master/css/kickstart.css" media="all">
+    <link rel="stylesheet" href="css/p2.css"
     <?php require 'logic.php'; ?>
 </head>
 
 <body>
-  <h1>Project 2:  xkcd-style password generator</h1>
-    <p>
-      <form method='POST', action="index.php"
-        <label> Number of Words in Password: </label>
-        <input type='text' name='wordcount'>
-        <input type="checkbox" name="number_flag" value="1"> <label>Number</label>
-        <input type='submit'>
+  <h3>Project 2:  xkcd-Style Password Generator</h3>
+  <div class="col_7" id="form_info">
+      <form method='POST', action="index.php">
+          <div class="form_section">
+              <label> Number of Words in Password: </label>
+              <input type='text' name='wordcount'>
+          </div>
+          <div class="form_section">
+              <label>Replace one word with number</label>
+              <input type="checkbox" name="number_flag" value="1">
+              <label>Add a special symbol</label>
+              <input type="checkbox" name="symbol_flag" value="1">
+          </div>
+          <div class="form_section">
+              <input type='submit'>
+          </div>
       </form>
-    </p>
+  </div>
+
+    <div class="col_7" id="error_display">
     <?php
-    if ($validInput) {
-      echo "Password: ";
-      for ($i = 0; $i < count($pwArray); $i++) {
-        echo " $pwArray[$i]";
-      }
-    } else {
-       echo "Please enter an integer between 3 and 9";
-    }
+       echo $errDisplay
     ?>
+  </div>
+    <div class="col_7" id="password_display">
+      <?php
+         echo $pwDisplay;
+      ?>
+    </div>
 </body>
 </html>
