@@ -6,7 +6,7 @@
 <!-- logic processing -->
 <!--  -->
 <?php
-$dictArray = array("corect",
+$dictArray = array("correct",
     "horse",
     "battery",
     "staple",
@@ -25,6 +25,7 @@ $dictArray = array("corect",
 
     $pwMinWords = 3; # minimum words in phrase
     $pwMaxWords = 10; # maximum words in phrase
+    $displaySpec = "(".$pwMinWords."-".$pwMaxWords.")";
     $validationErrMsg = "Please enter a number of words between "
     .$pwMinWords." and ".$pwMaxWords;
     $wordSep = ' ';

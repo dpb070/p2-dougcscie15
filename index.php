@@ -25,7 +25,9 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
   <div class="col_7" id="form_info">
       <form method='POST', action="index.php">
           <div class="form_section">
-              <label> Number of Words in Password: </label>
+              <label>
+                  Number of Words in Password <?php echo $displaySpec ?>: 
+              </label>
               <input type='text' name='wordcount'>
           </div>
           <div class="form_section">
